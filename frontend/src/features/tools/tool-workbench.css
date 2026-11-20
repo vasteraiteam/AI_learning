@@ -1,0 +1,106 @@
+.tool-workbench > section,
+.tool-workbench form,
+.tool-workbench fieldset,
+.tool-workbench label {
+  min-width: 0;
+}
+.tool-header,
+.tool-workbench .student-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tool-header {
+  justify-content: space-between;
+}
+.tool-badge {
+  color: #725218;
+  background: #fff3d9;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 12px;
+}
+.tool-workbench select {
+  width: 100%;
+  min-height: 40px;
+  background: white;
+  border: 1px solid #dce0ea;
+  border-radius: 8px;
+  padding: 7px 9px;
+  font: inherit;
+}
+.tool-workbench input[type="file"] {
+  min-width: 0;
+  font-size: 13px;
+}
+.tool-photo,
+.tool-content {
+  display: grid;
+  gap: 10px;
+}
+.tool-photo img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  background: #f5f7fa;
+  border-radius: 8px;
+}
+.tool-item {
+  border: 1px solid #e0e4ef;
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  padding: 9px 11px 12px;
+}
+.tool-item legend {
+  color: #394563;
+  font-size: 13px;
+  font-weight: 700;
+  padding-inline: 4px;
+}
+.tool-content textarea {
+  min-height: 64px;
+}
+.tool-card {
+  display: grid;
+  align-content: center;
+  gap: 9px;
+  background: #eef5fc;
+  border: 1px solid #dbe9f6;
+  border-radius: 8px;
+  min-height: 112px;
+  padding: 12px 16px;
+}
+.tool-workbench .tool-option {
+  display: flex;
+  align-items: center;
+  padding-block: 4px;
+}
+.tool-option input[type="radio"] {
+  width: auto;
+  min-height: 0;
+  flex: 0 0 auto;
+}
+.tool-workbench details summary {
+  cursor: pointer;
+  color: #495675;
+  font-size: 13px;
+}
+.tool-workbench details[open] summary {
+  margin-bottom: 8px;
+}
+.tool-workbench :is(p, li, legend) {
+  overflow-wrap: anywhere;
+}
+.tool-tree {
+  padding: 12px 16px;
+  border-left: 3px solid #6c9488;
+  background: #edf6f2;
+  color: #244b42;
+}
+.tool-tree ul {
+  list-style: disc;
+  margin: 4px 0;
+  padding-inline-start: 20px;
+}

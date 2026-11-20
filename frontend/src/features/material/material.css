@@ -1,0 +1,335 @@
+.material-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 36px;
+  color: var(--violet-strong);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.material-back:hover {
+  text-decoration: underline;
+}
+
+.material-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-block: 10px 22px;
+}
+
+.material-heading__icon {
+  display: grid;
+  flex: none;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid #e8dfff;
+  border-radius: var(--radius);
+  color: var(--violet-strong);
+  background: var(--violet-soft);
+}
+
+.material-heading__kicker {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.material-heading .page-title {
+  font-size: 22px;
+  overflow-wrap: anywhere;
+}
+.material-heading .page-subtitle {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.material-layout {
+  display: grid;
+  gap: 16px;
+}
+.material-review {
+  margin-block-end: 16px;
+}
+.material-reader {
+  min-width: 0;
+}
+
+.material-toolbar {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 7px;
+  border-bottom: 1px solid var(--line);
+}
+
+.material-toolbar__group {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.material-toolbar__group + .material-toolbar__group {
+  border-left: 1px solid var(--line);
+  padding-left: 6px;
+}
+
+.material-tool {
+  display: inline-grid;
+  min-width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 0;
+  border-radius: 6px;
+  color: var(--muted);
+}
+
+.material-tool:hover:not(:disabled) {
+  background: #f2effa;
+  color: var(--violet-strong);
+}
+.material-tool:disabled {
+  opacity: 0.42;
+}
+.material-toolbar__count {
+  min-width: 43px;
+  text-align: center;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.material-toolbar__download {
+  margin-left: auto;
+}
+
+.material-document {
+  display: grid;
+  min-height: 430px;
+  background: #edf0f6;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.material-thumbnails {
+  display: flex;
+  gap: 7px;
+  padding: 9px 10px;
+  overflow: auto;
+  border-bottom: 1px solid var(--line);
+  background: #fbfbfe;
+}
+
+.material-thumbnail {
+  display: grid;
+  flex: none;
+  width: 72px;
+  justify-items: center;
+  gap: 4px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.material-thumbnail .react-pdf__Page {
+  min-height: 71px;
+  width: 55px;
+  background: white;
+}
+.material-thumbnail[aria-current="page"] {
+  border-color: #d2c2fb;
+  background: #f2ebff;
+  color: var(--violet-strong);
+  font-weight: 700;
+}
+.material-thumbnail:hover {
+  background: #f5f2fd;
+}
+
+.material-viewport {
+  min-width: 0;
+  min-height: 345px;
+  max-height: min(74dvh, 900px);
+  overflow: auto;
+  padding: 14px;
+  overscroll-behavior: contain;
+}
+
+.material-paper {
+  position: relative;
+  aspect-ratio: 612 / 792;
+  margin-inline: auto;
+  background: white;
+  box-shadow: 0 2px 10px rgb(25 32 54 / 10%);
+}
+
+.material-anchor {
+  position: absolute;
+  z-index: 3;
+  inset: 26.25% 7.5% auto;
+  display: flex;
+  height: 16.16%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 4px;
+  border: 1px dashed #9b78e5;
+  border-radius: 5px;
+  background: transparent;
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease;
+}
+
+.material-anchor span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: #5734b5;
+  background: #efe8ff;
+  font-size: 11px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.material-anchor:hover,
+.material-anchor[aria-pressed="true"] {
+  border: 2px solid #8c63df;
+  background: rgb(143 101 225 / 7%);
+}
+
+.material-pdf-status {
+  align-self: center;
+  justify-self: center;
+  padding: 20px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.material-pdf-status a {
+  color: var(--violet-strong);
+  text-decoration: underline;
+}
+.material-sidebar {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+.material-return {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 1rem;
+}
+.material-current,
+.material-selection {
+  min-width: 0;
+  padding: 14px;
+}
+.material-card-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+.material-card-title svg {
+  color: var(--violet-strong);
+  flex: none;
+}
+.material-current__value {
+  margin-top: 8px;
+  font-weight: 650;
+  font-size: 14px;
+}
+.material-selection__label {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.material-selection__equation {
+  margin: 5px 0 8px;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+}
+.material-text-button {
+  min-height: 32px;
+  color: var(--violet-strong);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.material-ocr {
+  margin-block: 4px;
+  padding: 9px;
+  border-radius: 5px;
+  background: var(--canvas);
+  font-size: 13px;
+}
+.material-ask {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+.material-reader-actions__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.9rem;
+  margin-top: 4px;
+}
+.material-reader-actions__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+@media (max-width: 369px) {
+  .material-toolbar {
+    gap: 5px;
+  }
+  .material-tool {
+    min-width: 30px;
+  }
+  .material-toolbar__count {
+    min-width: 36px;
+  }
+}
+
+@media (min-width: 640px) {
+  .material-toolbar {
+    padding-inline: 12px;
+  }
+  .material-document {
+    grid-template-columns: 86px minmax(0, 1fr);
+  }
+  .material-thumbnails {
+    flex-direction: column;
+    padding: 12px 6px;
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+  }
+  .material-viewport {
+    padding: 22px;
+  }
+  .material-pdf-status {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1160px) {
+  .material-layout {
+    grid-template-columns: minmax(0, 1fr) 220px;
+  }
+  .app-shell--mia-docked .material-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .material-heading .page-title {
+    font-size: 27px;
+  }
+}

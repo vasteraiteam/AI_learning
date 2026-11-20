@@ -1,0 +1,145 @@
+.student-record-filters,
+.student-record-actions,
+.student-task-timing {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.student-record-filters {
+  gap: 10px 16px;
+}
+
+.student-record-filters label {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.student-record-filters select,
+.student-record-date input {
+  width: fit-content;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 37px;
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  background: var(--surface);
+  font-size: 14px;
+}
+
+.student-record-detail {
+  display: grid;
+  min-width: 0;
+  justify-items: start;
+  gap: 10px;
+  padding: 13px 15px;
+  border-inline-start: 3px solid var(--violet);
+  border-block: 1px solid var(--line);
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+
+.student-record-detail__head {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.student-record-detail__head :is(h2, h3) {
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 720;
+  scroll-margin-block-start: 74px;
+}
+
+.student-record-detail__head .student-eyebrow {
+  margin: 0 0 4px;
+}
+
+.student-record-date {
+  display: grid;
+  gap: 6px;
+}
+
+.student-record-date label {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.student-record-date > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.student-record-date button:disabled {
+  cursor: default;
+  opacity: 0.56;
+}
+
+.student-task__label label {
+  cursor: pointer;
+}
+
+.student-task-timing {
+  gap: 5px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.student-task-actions {
+  justify-content: end;
+  gap: 4px;
+}
+
+.student-structured-preview {
+  display: grid;
+  min-width: 0;
+  gap: 10px;
+  padding-block-start: 12px;
+  border-block-start: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+
+.student-structured-preview h3 {
+  font-size: 14px;
+  font-weight: 720;
+}
+
+.student-resume-location {
+  display: -webkit-box;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media (max-width: 439px) {
+  .student-record-filters select,
+  .student-record-date input {
+    font-size: 16px;
+  }
+
+  .student-task.student-review-task {
+    grid-template-columns: 22px minmax(0, 1fr);
+    padding-block: 8px 5px;
+  }
+
+  .student-review-task .student-task-actions {
+    grid-column: 2;
+    justify-content: start;
+  }
+}
